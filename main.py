@@ -13,7 +13,7 @@ def ClickBtn():
 
 ClickingButton = Button(window, text="Click Me!", command=ClickBtn, bg='white',
 fg="black", font=("Arial", 22))
-ShowInfo = Label(window, text="message", font=("Arial", 20),fg = "purple")
+ShowInfo = Label(window, text="Your Score Is 0", font=("Arial", 20),fg = "purple")
 ClickingButton.pack()
 ShowInfo.pack()
 window.mainloop()
