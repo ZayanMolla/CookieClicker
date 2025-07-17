@@ -10,7 +10,7 @@ def ClickBtn():
     global multiplier
     global number
     number += multiplier
-    ShowInfo["text"] = "Your Score Is " + str(number) + "Your Multiplier Is " + str(multiplier)
+    ShowInfo["text"] = "Your Score Is " + str(number) + "\nYour Multiplier Is " + str(multiplier)
     Score = str(number)
     if number > 9:
         multiplier = 2
