@@ -10,7 +10,7 @@ def ClickBtn():
     global multiplier
     global number
     number += multiplier
-    ShowInfo["text"] = "Your Score Is " + str(number)
+    ShowInfo["text"] = "Your Score Is " + str(number) + "Your Multiplier Is " + str(multiplier)
     Score = str(number)
     if number > 9:
         multiplier = 2
@@ -22,7 +22,6 @@ def ClickBtn():
         multiplier = 256
     if number > 99999:
         multiplier = 65536
-    ShowInfo["text"] = "Your Multiplier Is " + str(multiplier)
 
 ClickingButton = Button(window, text="Click Me!", command=ClickBtn, bg='white',
 fg="black", font=("Arial", 22))
