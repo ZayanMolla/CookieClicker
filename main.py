@@ -11,7 +11,7 @@ def ClickBtn():
     number += multiplier
     ShowInfo["text"] = "Your Score Is " + str(number)
     Score = str(number)
-    if number => 10:
+    if number > 9:
         multiplier = 2
 
 ClickingButton = Button(window, text="Click Me!", command=ClickBtn, bg='white',
