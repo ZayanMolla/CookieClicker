@@ -21,7 +21,7 @@ def ClickBtn():
     if number > 9999:
         multiplier = 256
     if number > 99999:
-        multiplier = 65536
+        multiplier = 1024
 
 ClickingButton = Button(window, text="Click Me!", command=ClickBtn, bg='white',
 fg="black", font=("Arial", 22))
