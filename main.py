@@ -9,10 +9,10 @@ number = 0
 def ClickBtn():
     global number
     number += 1
-    ShowInfo["text"] = "You Clicked " + str(number) + " times."
+    ShowInfo["text"] = "Your Score Is " + str(number)
 
-ClickingButton = Button(window, text="Click Me!", command=ClickBtn, bg='red',
-fg="blue", font=("Arial", 22))
+ClickingButton = Button(window, text="Click Me!", command=ClickBtn, bg='white',
+fg="black", font=("Arial", 22))
 ShowInfo = Label(window, text="message", font=("Arial", 20),fg = "purple")
 ClickingButton.pack()
 ShowInfo.pack()
