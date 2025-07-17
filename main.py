@@ -9,9 +9,9 @@ def ClickBtn():
     number += 1
     ShowInfo["text"] = "You Clicked " + str(number) + "times."
 ClickingImage = PhotoImage(file="cookie.png")
-ClickBtn = Button(window, image=ClickingImage, command=ClickBtn, bg='fab25f',
+ClickingButton = Button(window, image=ClickingImage, command=ClickBtn, bg='fab25f',
 fg="blue", font=("Arial", 22), command=ClickBtn)
 ShowInfo = Label(window, text="message", font=("Arial", 20),fg = "purple")
-ClickBtn.pack()
+ClickingButton.pack()
 ShowInfo.pack()
 window.mainloop()
