@@ -11,6 +11,8 @@ def ClickBtn():
     number += multiplier
     ShowInfo["text"] = "Your Score Is " + str(number)
     Score = str(number)
+    if number > -1:
+        multiplier = 1
     if number > 9:
         multiplier = 2
 
