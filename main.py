@@ -14,6 +14,15 @@ def ClickBtn():
     Score = str(number)
     if number > 9:
         multiplier = 2
+    if number > 99:
+        multiplier = 4
+    if number > 999:
+        multiplier = 16
+    if number > 9999:
+        multiplier = 256
+    if number > 99999:
+        multiplier = 65536
+    ShowInfo["text"] = "Your Multiplier Is " + str(multiplier)
 
 ClickingButton = Button(window, text="Click Me!", command=ClickBtn, bg='white',
 fg="black", font=("Arial", 22))
