@@ -5,14 +5,13 @@ window.geometry("300x300")
 window.title("Cookie Clicker")
 window.configure(bg='darkblue')
 number = 0
-
+multiplier = 1
 def ClickBtn():
+    global multiplier
     global number
     number += multiplier
     ShowInfo["text"] = "Your Score Is " + str(number)
     Score = str(number)
-    if number > -1:
-        multiplier = 1
     if number > 9:
         multiplier = 2
 
