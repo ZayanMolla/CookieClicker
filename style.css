@@ -1,0 +1,24 @@
+body {
+  background: url("https://cdn2.steamgriddb.com/hero_thumb/f490c742cd8318b8ee6dca10af2a163f.jpg") no-repeat center center fixed;
+  background-size: cover;
+  color: #222;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-top: 50px;
+}
+button {
+  font-size: 2em;
+  margin: 10px;
+  padding: 10px 30px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+#cookie-btn {
+  background: #fff;
+  color: #1a237e;
+}
+#auto-btn {
+  background: #ffd600;
+  color: #1a237e;
+}
