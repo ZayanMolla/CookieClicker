@@ -4,12 +4,30 @@
   <meta charset="UTF-8">
   <title>Cookie Clicker</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    @keyframes glow-fade {
+      0% { opacity: 1; }
+      50% { opacity: 0.3; }
+      100% { opacity: 1; }
+    }
+    @keyframes spin-slow {
+      0% { transform: rotate(0deg);}
+      100% { transform: rotate(360deg);}
+    }
+    .glow-animate {
+      animation: glow-fade 2s infinite, spin-slow 8s linear infinite;
+    }
+  </style>
 </head>
 <body>
   <h1>Cookie Clicker</h1>
-  <button id="cookie-btn" style="border:none; background:none; padding:0;">
-    <img src="https://images.cdn.us-central1.gcp.commercetools.com/4e5a974e-1287-4368-811f-41d06eb6c548/Chocolate%20Chip%20Silo%20-t71xMOs7.png" alt="Cookie" style="width:300px; height:300px;">
-  </button>
+  <div style="position: relative; display: inline-block;">
+    <!-- Glowing PNG behind the cookie with fade and spin animation -->
+    <img src="https://ya8xtvrmvkgn3hflmprn.c.websim.com/Shine.png" alt="Glow" class="glow-animate" style="position:absolute; left:-30px; top:-30px; width:380px; height:380px; z-index:0; pointer-events:none;">
+    <button id="cookie-btn" style="border:none; background:none; padding:0; position:relative; z-index:1;">
+      <img src="https://images.cdn.us-central1.gcp.commercetools.com/4e5a974e-1287-4368-811f-41d06eb6c548/Chocolate%20Chip%20Silo%20-t71xMOs7.png" alt="Cookie" style="width:300px; height:300px;">
+    </button>
+  </div>
   <div id="clicks-display" style="margin: 20px auto; width: 320px; background: rgba(255,255,255,0.8); border-radius: 16px; box-shadow: 0 2px 8px rgba(0,0,0,0.15); padding: 16px;">
     <span id="clicks" style="font-size: 2.5em; font-weight: bold; color: #1a237e;">Clicks: 0</span>
   </div>
