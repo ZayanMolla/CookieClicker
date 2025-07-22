@@ -13,7 +13,7 @@ A simple browser-based clicker game where you earn points by clicking a cookie. 
 ## Live Demo
 
 Play the game here:  
-**[https://your-subdomain.onrender.com](https://your-subdomain.onrender.com)**  
+**(https://offbrandcookieclicker.onrender.com/)**  
 *(Replace this with your actual Render link)*
 
 ## Technologies Used
